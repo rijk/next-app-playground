@@ -18,3 +18,11 @@ export default function RootLayout({
     </html>
   );
 }
+
+export async function generateStaticParams() {
+  return [
+    {
+      org: 'test-org',
+    },
+  ];
+}
