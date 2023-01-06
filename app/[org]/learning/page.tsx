@@ -1,13 +1,13 @@
 import Link from 'next/link';
 
-export default function Page() {
+export default function Page({ params }: any) {
   return (
     <div>
-      <p>This is page /</p>
+      learning page (should show learning layout above)
       <br />
       <br />
       <Link href="/www" className="underline">
-        &rarr; Go to /www
+        &rarr; Go back to /www
       </Link>
     </div>
   );
